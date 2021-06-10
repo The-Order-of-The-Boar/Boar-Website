@@ -1,0 +1,58 @@
+@font-face {
+
+
+    font-family: 'Centurion';
+    src: url(/fonts/The-Centurion.ttf) format('truetype');
+    src: url(../fonts/The-Centurion.ttf) format('truetype');
+  }
+
+body{
+  
+    background-image: url(../images/fundo2.png);
+    background-size: calc(100vh * 1.30) 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #121315;
+    background-repeat: no-repeat;
+    font-family: 'Centurion';
+    
+}
+
+#first-menu{
+
+    background-image: url('../images/tile1.png');
+    
+    background-size: contain;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+.menu-button{
+    border-style: solid; 
+    border-top-color: rgb(157,90,78, 0.3);
+    border-left-color:rgb(157,90,78, 0.3); 
+    border-right-color: rgb(0,0,0, 0.4);  
+    border-bottom-color: rgb(0,0,0, 0.4);
+    width: 10vw; 
+    background-color: #852414; 
+/*    text-align: center;
+    font-size: 3vh;*/
+    height: 5vh;
+}   /*4vh = 1.5rem*/
+
+.menu-button p{
+    margin-top: -1vh;
+    text-align: center;
+    font-size: 3vh;
+    margin-bottom:0;
+}
+
+.menu-button:hover{
+    border-top-color: rgb(157,90,78, 0.3);
+    background-image: radial-gradient(rgb(139,34, 17, 0.8), rgb(0, 0, 0, 0.5))
+
+}
