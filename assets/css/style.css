@@ -1,9 +1,36 @@
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #3a3a3a38;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(175, 25, 25);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(155, 60, 60);
+  }
+
+
 @font-face {
 
 
     font-family: 'Centurion';
     src: url(/fonts/The-Centurion.ttf) format('truetype');
     src: url(../fonts/The-Centurion.ttf) format('truetype');
+}
+@font-face {
+
+
+    font-family: 'London';
+    src: url(/fonts/OldLondon.ttf) format('truetype');
+    src: url(../fonts/OldLondon.ttf) format('truetype');
   }
 
 body{
@@ -14,23 +41,47 @@ body{
     background-attachment: fixed;
     background-color: #121315;
     background-repeat: no-repeat;
-    font-family: 'Centurion';
+    font-family: 'London';
     
 }
 
 #first-menu{
-
+    margin-top: 0;
     background-image: url('../images/tile1.png');
     
     background-size: contain;
 }
+#MainPage{
+    color: aliceblue;
+    text-align: center;
+    width: 75vw;
+}
+
 
 a{
     text-decoration: none;
     color: black;
 
 }
+table{
+    font-size: 30px;
+    margin-top: 50px;
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid rgb(255, 255, 255);
+}
+th, td{
+    height: 50px;
+}
+#LastTable{
+    margin-top: 90px;
+}
 
+.Tabs{
+    position: -webkit-sticky;
+    position: sticky;
+}
 .menu-button{
     border-style: solid; 
     border-top-color: rgb(157,90,78, 0.3);
@@ -45,14 +96,29 @@ a{
 }   /*4vh = 1.5rem*/
 
 .menu-button p{
-    margin-top: -1vh;
+    margin-top: 1vh;
     text-align: center;
     font-size: 3vh;
-    margin-bottom:0;
+
 }
 
 .menu-button:hover{
     border-top-color: rgb(157,90,78, 0.3);
     background-image: radial-gradient(rgb(139,34, 17, 0.8), rgb(0, 0, 0, 0.5))
 
+}
+
+.minor-image{
+    height: 300px;
+    width: 45%;
+}
+.last-image{
+    height: 500px;
+    width: 90%;
+}
+.title{
+    font-size: 70px;
+}
+.subtitle{
+    font-size: 30px;
 }
