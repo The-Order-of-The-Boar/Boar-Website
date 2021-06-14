@@ -122,3 +122,10 @@ th, td{
 .subtitle{
     font-size: 30px;
 }
+#images img{
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    margin-top: 30px;
+    
+}   
